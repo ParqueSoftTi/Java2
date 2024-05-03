@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-05-02T23:03:39-05:00",
+  "id": "Java2-markdown",
+  "duration": 0,
+  "title": "Desarrollo de una aplicación de gestión de productos con Spring",
+  "summary": "Curso de Java 2",
+  "source": ".\\Java2.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "javaavanzadoconspring"
+  ],
+  "tags": [
+    "web"
+  ],
+  "url": "Java2-markdown"
+}

@@ -1,0 +1,136 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Desarrollo de una aplicación de gestión de productos con Spring</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="Java2-markdown"
+                  title="Desarrollo de una aplicación de gestión de productos con Spring"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introducción a Spring Framework e Instalación del entorno" duration="0">
+        <p>En este codelab, desarrollaremos una aplicación de gestión de productos utilizando Spring Framework. La aplicación permitirá a los usuarios crear, leer, actualizar y eliminar productos, así como realizar consultas avanzadas utilizando JPQL. También implementaremos una API REST para acceder a los datos de productos y documentaremos la API utilizando Swagger.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Creación, configuración de base de datos" duration="0">
+        <p>Configuraremos una base de datos H2 para almacenar la información de productos. Utilizaremos el archivo application.properties para configurar la conexión a la base de datos.</p>
+<pre><code>spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Estructura de proyecto y Maven como gestor de dependencias" duration="0">
+        <p>Utilizaremos Maven para gestionar las dependencias del proyecto y organizar la estructura del proyecto de la siguiente manera:</p>
+<pre><code>src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── example/
+│   │           └── productmanagement/
+│   │               ├── controller/
+│   │               ├── model/
+│   │               ├── repository/
+│   │               └── service/
+│   └── resources/
+│       └── application.properties
+└── test/
+    └── java/
+        └── com/
+            └── example/
+                └── productmanagement/
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Stereotype y Anotaciones Para proyectos empresariales" duration="0">
+        <p>Utilizaremos las anotaciones @Component, @Repository, @Service y @Controller para marcar los componentes de Spring y gestionar la inyección de dependencias.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Persistencia con JPA y Spring Data JPA" duration="0">
+        <p>Implementaremos entidades JPA para representar los productos y configuraremos los repositorios de Spring Data JPA para interactuar con la base de datos.</p>
+<p class="image-container"><img alt="imagen1" src="img\\a4f3daa9e20a8ac5.png"></p>
+<p class="image-container"><img alt="imagen2" src="img\\27e5d528f074bc97.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="JPQL y consultas a una base de datos desde java" duration="0">
+        <p>Crearemos consultas JPQL personalizadas para realizar operaciones de consulta avanzadas en la base de datos.</p>
+<p class="image-container"><img alt="imagen3" src="img\\bd134f60a6d2e15c.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Creación de capa de servicios" duration="0">
+        <p>Implementaremos entidades JPA para representar los productos y configuraremos los repositorios de Spring Data JPA para interactuar con la base de datos.</p>
+<p class="image-container"><img alt="imagen4" src="img\\b7feb349bc5e3ae6.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Creación de controladores" duration="0">
+        <p>Desarrollaremos controladores para manejar las solicitudes HTTP y proporcionar puntos de acceso a nuestra aplicación de gestión de productos.</p>
+<p class="image-container"><img alt="imagen5" src="img\\b6e8b440f51ceb58.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Mockito y junit" duration="0">
+        <p>Escribiremos pruebas unitarias utilizando JUnit y Mockito para garantizar la calidad y fiabilidad de nuestro código.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="REST" duration="0">
+        <p>Implementaremos una API RESTful utilizando Spring MVC para proporcionar acceso a los datos de productos a través de HTTP.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Swagger Api" duration="0">
+        <p>Documentaremos nuestra API REST utilizando Swagger para facilitar su consumo y comprensión.</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
